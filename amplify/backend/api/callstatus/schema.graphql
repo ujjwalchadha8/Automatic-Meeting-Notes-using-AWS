@@ -1,0 +1,23 @@
+type Call @model {
+    id: ID!
+    dialerId: String
+    receiverId: String
+    dialerStatus: String
+    receiverStatus: String
+    createdAt: AWSDateTime
+    triggers: [String]
+}
+
+type UserDetails @model {
+    id: ID!
+    name: String
+    email: String
+    callNotes: [CallNote]
+}
+
+type CallNote @model {
+    id: ID!
+    summary: String
+    transcription: String
+    timestamp: AWSDate
+}

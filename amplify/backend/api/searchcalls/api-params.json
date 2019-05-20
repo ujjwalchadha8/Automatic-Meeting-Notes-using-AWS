@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/search",
+            "lambdaFunction": "searchcalls",
+            "privacy": {
+                "private": true,
+                "auth": []
+            }
+        }
+    ],
+    "resourceName": "searchcalls",
+    "apiName": "searchcalls",
+    "functionArns": [
+        {
+            "lambdaFunction": "searchcalls"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "callnotes-20190417171934-authRole",
+        "unAuthRoleName": "callnotes-20190417171934-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "searchcalls",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

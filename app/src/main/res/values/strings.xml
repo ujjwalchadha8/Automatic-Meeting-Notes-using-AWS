@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Make-A-Note</string>
+    <string name="agoraAppId">YOUR AGORA APP ID HERE</string>
+    <string name="cognitoPoolId">YOUR COGNITO POOL ID HERE</string>
+    <string name="awsRegion">AWS REGION</string>
+    <string name="s3BucketName">S3 BUCKET NAME WHERE CALL RECORDING WILL GO</string>
+    <string name="signUpUrl">
+        SIGN UP URL FOR YOUR APP
+    </string>
+</resources>

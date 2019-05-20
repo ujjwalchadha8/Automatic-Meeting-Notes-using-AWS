@@ -1,0 +1,97 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateCall($input: CreateCallInput!) {
+  createCall(input: $input) {
+    id
+    dialerId
+    receiverId
+    dialerStatus
+    receiverStatus
+    createdAt
+    triggers
+  }
+}
+mutation UpdateCall($input: UpdateCallInput!) {
+  updateCall(input: $input) {
+    id
+    dialerId
+    receiverId
+    dialerStatus
+    receiverStatus
+    createdAt
+    triggers
+  }
+}
+mutation DeleteCall($input: DeleteCallInput!) {
+  deleteCall(input: $input) {
+    id
+    dialerId
+    receiverId
+    dialerStatus
+    receiverStatus
+    createdAt
+    triggers
+  }
+}
+mutation CreateUserDetails($input: CreateUserDetailsInput!) {
+  createUserDetails(input: $input) {
+    id
+    name
+    email
+    callNotes {
+      id
+      summary
+      transcription
+      timestamp
+    }
+  }
+}
+mutation UpdateUserDetails($input: UpdateUserDetailsInput!) {
+  updateUserDetails(input: $input) {
+    id
+    name
+    email
+    callNotes {
+      id
+      summary
+      transcription
+      timestamp
+    }
+  }
+}
+mutation DeleteUserDetails($input: DeleteUserDetailsInput!) {
+  deleteUserDetails(input: $input) {
+    id
+    name
+    email
+    callNotes {
+      id
+      summary
+      transcription
+      timestamp
+    }
+  }
+}
+mutation CreateCallNote($input: CreateCallNoteInput!) {
+  createCallNote(input: $input) {
+    id
+    summary
+    transcription
+    timestamp
+  }
+}
+mutation UpdateCallNote($input: UpdateCallNoteInput!) {
+  updateCallNote(input: $input) {
+    id
+    summary
+    transcription
+    timestamp
+  }
+}
+mutation DeleteCallNote($input: DeleteCallNoteInput!) {
+  deleteCallNote(input: $input) {
+    id
+    summary
+    transcription
+    timestamp
+  }
+}

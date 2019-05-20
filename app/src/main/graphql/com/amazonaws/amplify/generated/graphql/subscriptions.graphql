@@ -1,0 +1,97 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateCall {
+  onCreateCall {
+    id
+    dialerId
+    receiverId
+    dialerStatus
+    receiverStatus
+    createdAt
+    triggers
+  }
+}
+subscription OnUpdateCall {
+  onUpdateCall {
+    id
+    dialerId
+    receiverId
+    dialerStatus
+    receiverStatus
+    createdAt
+    triggers
+  }
+}
+subscription OnDeleteCall {
+  onDeleteCall {
+    id
+    dialerId
+    receiverId
+    dialerStatus
+    receiverStatus
+    createdAt
+    triggers
+  }
+}
+subscription OnCreateUserDetails {
+  onCreateUserDetails {
+    id
+    name
+    email
+    callNotes {
+      id
+      summary
+      transcription
+      timestamp
+    }
+  }
+}
+subscription OnUpdateUserDetails {
+  onUpdateUserDetails {
+    id
+    name
+    email
+    callNotes {
+      id
+      summary
+      transcription
+      timestamp
+    }
+  }
+}
+subscription OnDeleteUserDetails {
+  onDeleteUserDetails {
+    id
+    name
+    email
+    callNotes {
+      id
+      summary
+      transcription
+      timestamp
+    }
+  }
+}
+subscription OnCreateCallNote {
+  onCreateCallNote {
+    id
+    summary
+    transcription
+    timestamp
+  }
+}
+subscription OnUpdateCallNote {
+  onUpdateCallNote {
+    id
+    summary
+    transcription
+    timestamp
+  }
+}
+subscription OnDeleteCallNote {
+  onDeleteCallNote {
+    id
+    summary
+    transcription
+    timestamp
+  }
+}

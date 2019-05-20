@@ -1,0 +1,86 @@
+# this is an auto generated file. This will be overwritten
+query GetCall($id: ID!) {
+  getCall(id: $id) {
+    id
+    dialerId
+    receiverId
+    dialerStatus
+    receiverStatus
+    createdAt
+    triggers
+  }
+}
+query ListCalls(
+  $filter: ModelCallFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listCalls(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      dialerId
+      receiverId
+      dialerStatus
+      receiverStatus
+      createdAt
+      triggers
+    }
+    nextToken
+  }
+}
+query GetUserDetails($id: ID!) {
+  getUserDetails(id: $id) {
+    id
+    name
+    email
+    callNotes {
+      id
+      summary
+      transcription
+      timestamp
+    }
+  }
+}
+query ListUserDetailss(
+  $filter: ModelUserDetailsFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listUserDetailss(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      name
+      email
+      callNotes {
+        id
+        summary
+        transcription
+        timestamp
+      }
+    }
+    nextToken
+  }
+}
+query GetCallNote($id: ID!) {
+  getCallNote(id: $id) {
+    id
+    summary
+    transcription
+    timestamp
+  }
+}
+query ListCallNotes(
+  $filter: ModelCallNoteFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listCallNotes(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      summary
+      transcription
+      timestamp
+    }
+    nextToken
+  }
+}
